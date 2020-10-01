@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int N;
+	string s;
+	int countA=0,countS=0,countP=0;
+
+	cin>>N;
+	cin>>s;
+	for(auto ele: s){
+		if(ele=='a'){countA++;}
+		if(ele=='p'){countP++;}
+		if(ele=='s'){countS++;}
+	}
+	cout<<countA<<" "<<countS<<" "<<countP;
+	return 0;
+
+}
